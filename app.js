@@ -78,6 +78,8 @@ function Click() {
         clear();
     }
     input.focus();
+    select.focus();
+    input2.focus();
 }
 
 
