@@ -1,18 +1,13 @@
 const input = document.getElementById("input");
-
 const input2 = document.getElementById("input2");
 const button = document.getElementById("button");
-
 const select = document.getElementById("select");
-
 const plusB = document.getElementById("plus");
 const minusB = document.getElementById("minus");
 const diviB = document.getElementById("divi");
 const multiB = document.getElementById("multi");
-
 const p = document.getElementById("p");
 p.textContent = "0";
-
 const err = (n, n2) => {
     if (!n || !n2) {
         console.log("yleoo");
@@ -45,7 +40,6 @@ const clear = () => {
 };
 const errr = document.createElement("p");
 errr.style.textAlign = "center";
-
 function Click() {  
     if (input.value == "" || input2.value == "") {
         errr.textContent = "Please input a value";
@@ -55,7 +49,6 @@ function Click() {
             errr.remove();
         }, 3000);
     }
-
     if (select.value == "+") {
         let sum = plus(Number(input.value), Number(input2.value));
         p.textContent = sum;
@@ -78,18 +71,10 @@ function Click() {
         clear();
     }
     input.focus();
-    select.focus();
-    input2.focus();
 }
-
-
 document.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         button.click()
     }
 })
-
-
 button.addEventListener("click", Click);
-
-
