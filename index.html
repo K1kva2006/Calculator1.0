@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+
+        
+        <meta name="description" content="Calculator" />
+        <meta name="keywords" content="Calculator" />
+        <meta name="author" content="kikva" />
+
+        <meta property="og:title" content="Calculator" />
+        <meta property="og:type" content="section" />
+        <meta
+            property="og:description"
+            content="Calculator VanilaJS"
+        />
+
+
+        <link rel="stylesheet" href="style.css" /> 
+    </head>
+    <body>
+        <div class="container" id="cont">
+            <input type="number" id="input" placeholder="Input a number" />
+            <select name="operation" id="select" title="select">
+                <option id="plus">+</option>
+                <option id="minus">-</option>
+                <option id="divi">/</option>
+                <option id="multi">*</option>
+                <option id="multi2">**</option>
+            </select>
+            <input type="number" id="input2" placeholder="Input a number" />
+            <button id="button">Enter</button>
+        </div>
+        <p id="p"></p>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
